@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Light and Dark Mode */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+}
+
+[data-theme='dark'] {
+    --bg-color: #333;
+    --text-color: #f4f4f4;
+}
+
+nav {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    padding: 50px 0;  /* Keep top and bottom padding reasonable */
+    margin-bottom: 0;  /* Remove bottom margin to minimize space */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down; /* Ensures the image maintains its aspect ratio while filling the circle */
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+p {
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+#about {
+    padding-top: 00px;  /* Reduce the top padding to bring it closer to the home section */
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: var(--bg-color);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px 0;
+}
