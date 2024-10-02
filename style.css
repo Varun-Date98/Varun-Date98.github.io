@@ -137,3 +137,20 @@ footer {
     color: var(--text-color);
     padding: 20px 0;
 }
+
+/* Styling for the project cards */
+.project-card {
+    text-align: center; /* Center the content in the card */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 10px; /* Space between title and image */
+    text-align: center; /* Ensures the title is centered */
+}
